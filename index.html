@@ -4,15 +4,16 @@
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>Weather Now</title>
+      <script src="./script/script.js"></script>
       <link rel="stylesheet" href="./style/style.css" />
     </head>
     <body>
       <div id="head">
         <h1>Weather Now</h1>
       </div>
-      <form action="./script/script.js" method="post">
+      <form>
         <input type="text" id="input1" name="city" placeholder="Enter a city">
-        <input type="submit" id="input2" value="Get Weather">
+        <input type="button" onclick="getInfo()" id="input2" value="Get Weather">
       </form>
       <div id="weather"></div>
       <div class="wtsapp">
@@ -22,5 +23,4 @@
         </a>
       </div>
     </body>
-    <script src="/script/script.js"></script>
   </html>
