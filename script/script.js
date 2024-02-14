@@ -39,9 +39,10 @@ function wa(){
   document.getElementById("an").href =`https://wa.me/91${phno}?text=${msg}`
   }
 }
-
-document.querySelector("form").addEventListener("submit", (e) => {
-  e.preventDefault();
-  const city = document.querySelector("input[name=city]").value;
+function getInfo(){
+const city = document.getElementById("input1").value;
   getWeather(city);
-});
+                        }
+//document.querySelector("form").addEventListener("submit", (e) => {
+ // e.preventDefault();
+ // const city = document.querySelector("input[name=city]").value;} );
